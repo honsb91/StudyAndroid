@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- wrap_content는 위젯이 가지는 기본크기, 위젯의 자식요소가 커지면 같이 커짐-->
+
+    <LinearLayout
+        android:background="#236"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_margin="10dp"
+        android:text="마진 WRAP_CONTENT\n aaaaa\n aaaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:text="마진 방향 주기"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="패딩"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="왼쪽 패딩 내부 여백"
+        android:paddingLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="invisible"
+        android:text="가시성 (공간을 차지하면서 안보이는 상태를 의미)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="gone"
+        android:text="가시성 ( 공간을 차지하지 않고 안보이는 상태를 의미)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <!--gravity : 내부에 있는 자식요소에 중력(방향)을 적용함
+        layout_gravity : 부모요소에 나의 위치를 변경시킴.
+        Linear : 방향성에 의해서 상 하 , 좌 우 로만 이동이 가능함( 리니어의 규칙성 )
+        Relative : 부모 기준으로 정렬 규칙이 이미 있음 ( layout_gravity 필요없음 )
+        ImageView : src
+    -->
+
+    <ImageView
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="#B6ADAD"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <Button
+            android:gravity="top|right"
+            android:text="그래비티"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:gravity="top|right"
+            android:text="그래비티"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

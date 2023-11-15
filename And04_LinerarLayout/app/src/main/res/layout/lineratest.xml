@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="버튼 1"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="220dp"/>
+
+        <Button
+            android:text="버튼"
+            android:layout_marginLeft="20dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="버튼"
+            android:layout_marginLeft="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#489"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:text="버튼"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="버튼"
+            android:layout_marginLeft="13dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="#412"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn1"
+            android:text="버튼"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="버튼"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
