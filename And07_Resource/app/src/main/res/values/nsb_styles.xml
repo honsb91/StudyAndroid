@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 위젯의 크기같은 속성은 dimen 이라는 태그를 이용해서 관리
+        같은 모양의 위젯들에 같은 dimen 속성을 적용하고 한번에 변경 처리
+        ex) 화면 10 -> 텍스트뷰 같은 모양 100개가 있음. -> 하나씩 dp,sp 글자 크기를 줌줌 -> 변경 시 하나씩 찾아서 바꿔줘야 함
+         dimen 변수 하나 수정.
+   -->
+
+    <dimen name="tv_num_width">200dp</dimen>
+    <dimen name="tv_num_height">100dp</dimen>
+
+    <style name="tv_num_style">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tv_num_style_extend" parent="tv_num_style">
+        <item name="android:textColor">#8BC34A</item>
+
+    </style>
+
+</resources>

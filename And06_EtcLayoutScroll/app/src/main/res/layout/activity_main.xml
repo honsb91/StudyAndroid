@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <View
+        android:background="#123"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_h"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/scroll_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_launcher_foreground" />
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="600dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgv"
+                    android:text="Hello World!" />
+            </RelativeLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/btm_nav"
+        android:background="#123"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+</LinearLayout>
