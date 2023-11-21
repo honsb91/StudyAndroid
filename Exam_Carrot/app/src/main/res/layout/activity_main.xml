@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/carrot_main_tv"
+            android:text="나의 당근"/>
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/carrot_guide_line"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgv_profile"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="농성동 12345678"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@drawable/carrot_dot_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_top_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="중고거래는 이제 당근페이로 해보세요!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/carrot_top_linear">
+            <ImageView
+                android:src="@drawable/ic_top_menu1"
+                style="@style/carrot_top_imgv"/>
+            <TextView
+                style="@style/carrot_top_tv"
+                android:text="판매내역"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/carrot_top_linear">
+            <ImageView
+                android:src="@drawable/ic_top_menu2"
+                style="@style/carrot_top_imgv"/>
+            <TextView
+                style="@style/carrot_top_tv"
+                android:text="구매내역"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/carrot_top_linear">
+            <ImageView
+                android:src="@drawable/ic_top_menu3"
+                style="@style/carrot_top_imgv"/>
+            <TextView
+                style="@style/carrot_top_tv"
+                android:text="관심목록"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/carrot_guide_line"
+        android:layout_height="10dp"/>
+
+    <TextView
+        style="@style/carrot_main_tv"
+        android:text="사장님 메뉴"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_menu1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            style="@style/carrot_sub_tv"
+            android:text="비즈프로필 관리"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_menu2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            style="@style/carrot_sub_tv"
+            android:text="광고"/>
+    </LinearLayout>
+
+    <ImageView
+        android:background="#123"
+        android:layout_width="wrap_content"
+        android:layout_height="700dp"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    </LinearLayout>
+</ScrollView>

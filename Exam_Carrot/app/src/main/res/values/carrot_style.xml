@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="carrot_top_linear">
+    <item name="android:gravity">center</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+ <style name="carrot_top_imgv">
+   <item name="android:layout_width">60dp</item>
+   <item name="android:layout_height">60dp</item>
+ </style>
+
+ <style name="carrot_top_tv">
+  <item name="android:layout_width">wrap_content</item>
+  <item name="android:layout_height">wrap_content</item>
+  <item name="android:textColor">#232323</item>
+ </style>
+
+    <style name="carrot_guide_line">
+
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">#EEEEEE</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="carrot_main_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#242424</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="carrot_sub_tv" parent="carrot_main_tv">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+
+
+
+       <!-- <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_menu1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:textColor="#2E2E2E"
+            ="center"
+            ="10dp"
+            android:text="비즈프로필 관리"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"-->
+
+    </style>
+</resources>
