@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class LoginActivity extends AppCompatActivity {
 
     EditText edt_id , edt_pw;
@@ -48,8 +50,21 @@ public class LoginActivity extends AppCompatActivity {
 
             if("admin".equals(edt_id.getText()+"") && "admin1234".equals(edt_pw.getText()+"")){
                 Log.d("로그인 성공", edt_id.getText()+ "");
+                LoginDTO dto = new LoginDTO(edt_id.getText().toString() , edt_pw.getText().toString());
+                ArrayList<LoginDTO> list = new ArrayList<>();
+                list.add(new LoginDTO("id1", "pw1"));
+                list.add(new LoginDTO("id2", "pw2"));
+
+
                 Intent intent = new Intent(this, MainActivity.class);
+                intent.putExtra("strkey", "테스트데이터 스트링");
+                intent.putExtra("intkey", "111");
+                intent.putExtra("dtokey" , dto);
+                intent.putExtra("listkey", list); // list를 보낼 수 있는 이유는 dto가 직렬화 되어있기 때문. ArrayList<직렬화> == list <로그인클래스>
+
                 startActivity(intent);
+                finish(); // 현재 activity 종료.
+
             }else{
                 Log.d("로그인 실패", edt_pw.getText()+"");
             }
