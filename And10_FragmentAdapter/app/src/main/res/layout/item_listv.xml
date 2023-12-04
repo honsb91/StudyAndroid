@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imgv_profile"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tv_age"
+        android:layout_toRightOf="@id/imgv_profile"
+        android:text="이름"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tv_gender"
+        android:layout_toRightOf="@id/imgv_profile"
+        android:layout_below="@id/tv_age"
+        android:text="이름"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/tv_name"
+        android:layout_below="@id/imgv_profile"
+        android:text="이름"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="그냥 버튼"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+
+
+</RelativeLayout>

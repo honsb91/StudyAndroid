@@ -22,15 +22,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         btn_frag1.setOnClickListener(v->{
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
         });
+
 
         btn_frag2.setOnClickListener(v->{
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, new MyFragment2()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new MyFragment2()).commit();
         });
 
-        btn_frag3.setOnClickListener(v->{
+        btn_frag3.setOnClickListener(v -> {
             getSupportFragmentManager().beginTransaction().replace(R.id.container, new MyFragment3()).commit();
         });
+
+
     }
 }

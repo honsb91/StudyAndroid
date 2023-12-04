@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btn_frag1"
         android:text="프래그먼트 붙이기1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
     <Button
         android:id="@+id/btn_frag2"
         android:text="프래그먼트 붙이기2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-
+    <!-- btn_frag3 클릭 시 내가 새로 만든 프래그먼트가 붙게 처리해보기
+        새로 만든 프래그먼트 내부에는 버튼하나와 텍스트뷰 하나를 넣고,
+        버튼 클릭 시 텍스트뷰에 버튼눌림이 표시되게 코딩해보기.
+    -->
     <Button
         android:id="@+id/btn_frag3"
         android:text="프래그먼트 혼자 붙여보기"
@@ -33,6 +35,5 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
-
 
 </LinearLayout>
