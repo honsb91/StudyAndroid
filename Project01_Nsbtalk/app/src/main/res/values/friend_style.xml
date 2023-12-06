@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="gray_view_line1dp">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">#E4E7EA</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+
+    <style name="friend_name_textview_black">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="friend_name_textview_black_left" parent="friend_name_textview_black">
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="friend_name_textview_gray_left" parent="friend_name_textview_black_left">
+        <item name="android:textColor">#A19E9E</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+</resources>

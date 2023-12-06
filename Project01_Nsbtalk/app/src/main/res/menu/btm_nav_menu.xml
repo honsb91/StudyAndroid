@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        never : 아이템 표시 x
+        ifRoom : 표시 공간이 있다면 표시
+        withText : 글자와 함께 표시
+        always : 항상 보이기
+
+    -->
+
+    <item
+        android:id="@+id/tab1"
+        android:icon="@drawable/img_tab1"
+        app:showAsAction="ifRoom"
+        android:title="친구"/>
+
+    <item
+        android:id="@+id/tab2"
+        android:icon="@drawable/img_tab2"
+        app:showAsAction="ifRoom"
+        android:title="채팅"/>
+
+    <item
+        android:id="@+id/tab3"
+        android:icon="@drawable/img_tab3"
+        app:showAsAction="ifRoom"
+        android:title="오픈채팅"/>
+
+    <item
+        android:id="@+id/tab4"
+        android:icon="@drawable/img_tab4"
+        app:showAsAction="ifRoom"
+        android:title="쇼핑"/>
+
+    <item
+        android:id="@+id/tab5"
+        android:icon="@drawable/img_tab5"
+        app:showAsAction="ifRoom"
+        android:title="더보기"/>
+</menu>

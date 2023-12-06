@@ -15,6 +15,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        getSupportActionBar().hide(); // 액션바 숨기기 ( NoActionbar의 경우 NullPointerException 발생 !)
 
         ProgressDialog dialog = new ProgressDialog(this);
         dialog.setTitle("Nsb Talk");
