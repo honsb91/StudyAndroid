@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".opentalk.OpenTalkMainFragment"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:padding="5dp"
+            >
+            <!-- 선택 된 칩은 검정 배경에 흰 글자 -->
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_1"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipIconTint="@drawable/chip_opentalk_foreground"
+                android:textColor="@drawable/chip_opentalk_foreground"
+                app:chipBackgroundColor="@drawable/chip_opentalk_background"
+                app:chipIcon="@drawable/ic_chip_opentalk1"
+                app:chipIconEnabled="true"
+                app:iconStartPadding="10dp"
+                app:textStartPadding="5dp"
+                app:iconEndPadding="10dp"
+                app:textEndPadding="5dp"
+                app:chipMinHeight="40dp"
+                android:text="내 채팅방"
+                android:checked="true"
+                />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipIconTint="@drawable/chip_opentalk_foreground"
+                android:textColor="@drawable/chip_opentalk_foreground"
+                app:chipBackgroundColor="@drawable/chip_opentalk_background"
+                app:chipIcon="@drawable/ic_chip_opentalk2"
+                app:chipIconEnabled="true"
+                app:iconStartPadding="10dp"
+                app:textStartPadding="5dp"
+                app:iconEndPadding="10dp"
+                app:textEndPadding="5dp"
+                app:chipMinHeight="40dp"
+                android:text="광주"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipIconTint="@drawable/chip_opentalk_foreground"
+                android:textColor="@drawable/chip_opentalk_foreground"
+                app:chipBackgroundColor="@drawable/chip_opentalk_background"
+                app:chipIcon="@drawable/ic_chip_opentalk3"
+                app:chipIconEnabled="true"
+                app:iconStartPadding="10dp"
+                app:textStartPadding="5dp"
+                app:iconEndPadding="10dp"
+                app:textEndPadding="5dp"
+                app:chipMinHeight="40dp"
+                android:text="지금 뜨는"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_4"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipIconTint="@drawable/chip_opentalk_foreground"
+                android:textColor="@drawable/chip_opentalk_foreground"
+                app:chipBackgroundColor="@drawable/chip_opentalk_background"
+                app:chipIcon="@drawable/ic_chip_opentalk4"
+                app:chipIconEnabled="true"
+                app:iconStartPadding="10dp"
+                app:textStartPadding="5dp"
+                app:iconEndPadding="10dp"
+                app:textEndPadding="5dp"
+                app:chipMinHeight="40dp"
+                android:text="오픈채팅 Lite"/>
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list.ListFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="프로필"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="15dp"
+            android:text="로그인하고 다음 여행 계획을 세워보세요."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/white"
+                android:text="로그인"
+                android:background="@drawable/solid_button"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="30dp"
+                android:text="에어비앤비 계정이 없나요? 회원 가입"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="설정"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/baseline_settings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="접근성"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/baseline_settings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="호스팅에 대해 자세히 알아보기"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/baseline_settings"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="도움 요청"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/help_outline"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="이용약관"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/menu_book"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="개인정보 처리방침"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/menu_book"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="회사 세부정보"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/menu_book"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:text="오픈 소스 라이선스"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/menu_book"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="45dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DEE0E1"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

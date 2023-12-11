@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"
+        android:title="검색"/>
+
+    <item
+        android:id="@+id/tab2"
+        android:icon="@drawable/ii"
+        app:showAsAction="ifRoom"
+        android:title="위시리스트"/>
+
+    <item
+        android:id="@+id/tab3"
+        android:icon="@drawable/air"
+        app:showAsAction="ifRoom"
+        android:title="여행"/>
+
+    <item
+        android:id="@+id/tab4"
+        android:icon="@drawable/comment"
+        app:showAsAction="ifRoom"
+        android:title="메시지"/>
+
+    <item
+        android:id="@+id/tab5"
+        android:icon="@drawable/person_pin"
+        app:showAsAction="ifRoom"
+        android:title="로그인"/>
+
+</menu>

@@ -7,10 +7,12 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.project01_nsbtalk.chat.ChatFragment;
 import com.example.project01_nsbtalk.databinding.ActivityMainBinding;
 import com.example.project01_nsbtalk.friend.FriendFragment;
+import com.example.project01_nsbtalk.opentalk.OpenTalkMainFragment;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater()); // 바인딩 초기화
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setElevation(0f); // 액션바 밑에 명암 , 그림자를 없애는 코드
-        actionBar.setTitle("친구"); // 액션바 이름
+        actionBar.setElevation(0f);
+        actionBar.setTitle("친구");
 
 //        binding.bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
 //            @Override
@@ -37,15 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         changeFragment(new FriendFragment());
         binding.bottomNav.setOnItemSelectedListener(item ->{
-            if (item.getItemId() == R.id.tab1){
+            if(item.getItemId() == R.id.tab1){
                 changeFragment(new FriendFragment());
-            } else if (item.getItemId() == R.id.tab2) {
-                changeFragment(new ChatFragment());    
-            }else if (item.getItemId() == R.id.tab3) {
+            }else if(item.getItemId() == R.id.tab2){
+                changeFragment(new ChatFragment());
+            }else if(item.getItemId() == R.id.tab3){
+                changeFragment(new OpenTalkMainFragment());
+            }else if(item.getItemId() == R.id.tab4){
 
-            }else if (item.getItemId() == R.id.tab4) {
-
-            }else if (item.getItemId() == R.id.tab5) {
+            }else if(item.getItemId() == R.id.tab5){
 
             }
             actionBar.setTitle(item.getTitle());
@@ -55,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeFragment(Fragment fragment){
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container , fragment).commit();
     }
+
 
 }
