@@ -1,6 +1,5 @@
 package com.example.airbnbapplication;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -14,6 +13,7 @@ import com.example.airbnbapplication.search.SearchFragment;
 import com.example.airbnbapplication.travel.TravelFragment;
 
 public class MainActivity extends AppCompatActivity {
+
 
     ActivityMainBinding binding; // (1). binding 선언
 
