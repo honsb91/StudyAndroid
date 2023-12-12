@@ -1,4 +1,4 @@
-package com.example.airbnbapplication.search;
+package com.example.airbnbapplication.pension;
 
 import android.os.Bundle;
 
@@ -10,11 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.airbnbapplication.R;
 
-public class SearchFragment extends Fragment {
+public class PensionFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_pension, container, false);
     }
 }

@@ -43,4 +43,6 @@ dependencies {
     // 이미지 슬라이더 라이브러리
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'me.relex:circleindicator:2.1.6'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
 }
