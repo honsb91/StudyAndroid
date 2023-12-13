@@ -3,7 +3,11 @@ package com.example.exam00_middletoand;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
+import com.example.exam00_middletoand.common.CommonConn;
+import com.example.exam00_middletoand.common.CommonService;
+import com.example.exam00_middletoand.common.CommonRetClient;
 import com.google.gson.Gson;
 
 import java.util.HashMap;
@@ -19,27 +23,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NsbInterface nsbInterface = NsbClient.getNsbClient().create(NsbInterface.class);
+        // 옵저버 패턴 순서 2번
+        // 양쪽은 같은 인터페이스를 참조한다.
 
-        NsbVO vo = new NsbVO();
-        vo.setStr("hds");
-        vo.setNum(29);
-        vo.setDoubleF(3.14);
 
-        String jsonData = new Gson().toJson(vo);
-        HashMap<String,Object> params = new HashMap<>();
-        params.put("param",jsonData);
-
-        nsbInterface.getData("asdf.nsb",params).enqueue(new Callback<String>() {
+        new CommonConn(this, "aaa.nsb").onExcute(new CommonConn.NsbCallback() {
             @Override
-            public void onResponse(Call<String> call, Response<String> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<String> call, Throwable t) {
-
+            public void onResult(boolean isResult, String data) {
+                Log.d("Common", "onResult: " + data);
+                Log.d("Common", "onResult: " + isResult);
             }
         });
+
     }
 }

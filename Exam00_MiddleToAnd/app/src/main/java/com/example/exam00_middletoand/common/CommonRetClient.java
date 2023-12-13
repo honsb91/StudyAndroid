@@ -1,9 +1,9 @@
-package com.example.exam00_middletoand;
+package com.example.exam00_middletoand.common;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-public class NsbClient {
+public class CommonRetClient {
 
     public static Retrofit getNsbClient(){
 
