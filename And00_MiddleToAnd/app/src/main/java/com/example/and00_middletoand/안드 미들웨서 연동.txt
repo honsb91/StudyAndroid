@@ -1,0 +1,62 @@
+1. manifests.xml에 내용 추가
+    1.1 : 인터넷 권한 설정 <uses-permission android:name="android.permission.INTERNET"/>
+    1.2 : HTTP 프로토콜을 사용 android:usesCleartextTraffic="true" ↓
+        -> Android에서는 보안상의 이유로 기본적으로는 http 요청을 막아둠 https만 기본적으로 사용이 가능
+        -> http(www) 에서 정보를 주고 받기 위한 표준 ( 암호화 x )
+        -> https ( 보안버전 , SSL, TLS 암호화 표준 )
+
+
+2. 라이브러리 추가
+    2.1 : "Retrofit" -> 실무에서 자주 사용 , HttpClient(요청) 처리를 쉽게 가능하게함
+            -> Volley , OkHttp... 등등
+
+    2.2 : "Retrofit" 스칼라 컨버터 : 데이터를 단일 String으로 양쪽이 표준을 맞춤. ( 보통 받을 때 사용 )
+
+    2.3 : "Gson" 어떤 객체 , 데이터를 전부 Json으로 쉽게 바꾸게 해줌 ( Json -> 객체 , 데이터형태로 변환 )
+    <-- 실제 추가 코드 -->
+    // Retrofit Core : Http 요청을 쉽게하기 위한 library
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.9.0'
+
+    // 단일행 데이터를 받기 위한 컨버터 : 컨버터 종류 중 사용법이 제일 단순함
+    implementation group: 'com.squareup.retrofit2', name: 'converter-scalars', version: '2.9.0'
+
+    // String Json을 객체로 변환 또는 객체를 String Json 으로 변환
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.9'
+
+3. 인터페이스 추가
+public interface ApiInterface {
+    @FormUrlEncoded // @Url을 같이 사용해야함
+    @POST
+    Call<String> getData(@Url String url, @FieldMap HashMap<String,Object> params);
+}
+
+4 . retrofit 객체 생성
+public static Retrofit getApiClinet(){
+
+        Retrofit retrofit = new Retrofit.Builder() // Retrofit.Builder 로 초기화 시켜야함
+                .baseUrl("http://192.168.0.48/mid/") // 내꺼 톰캣에서 프로젝트까지 ( index.html 뜨는 주소가 base)
+                .addConverterFactory(ScalarsConverterFactory.create()) // String json 사용이 가능해짐
+                .build();
+
+        return retrofit;
+
+
+5 . 사용하기
+ 1. ApiInterface apiInterface = ApiClient.getApiClinet().create(ApiInterface.class);
+ 2. apiInterface.getData("url 부분", 파라메터).enqueue(new Callback<String>() {
+               @Override
+               public void onResponse(Call<String> call, Response<String> response) {
+                   // 응답 받았을 때
+
+               }
+
+               @Override
+               public void onFailure(Call<String> call, Throwable t) {
+                   // 응답없음
+               }
+           });
+       }
+
+       6. Gson
+       객체를 String Json으로 바꾸기 . new Gson().toJson(객체);
+       String Json을 객체로 바꾸기 . new Gson().fromJson(StringJson , 객체타입.class);
