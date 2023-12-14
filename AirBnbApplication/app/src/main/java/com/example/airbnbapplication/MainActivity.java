@@ -29,13 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         binding = ActivityMainBinding.inflate(getLayoutInflater()); // (2). binding 초기화
         setContentView(binding.getRoot());
-
-
-
 
         changeFragment(new SearchFragment());
         binding.bottomNav.setOnItemSelectedListener(item -> {
@@ -50,13 +45,9 @@ public class MainActivity extends AppCompatActivity {
             }else if (item.getItemId() == R.id.tab5) {
                 changeFragment(new LoginFragment());
             }
-
             return true;
-
         });
-
     }
-
     public void changeFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
     }

@@ -45,5 +45,9 @@ dependencies {
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.9'
     // 이미지 붙이는 라이브러리
     implementation group: 'com.github.bumptech.glide', name: 'glide', version: '4.13.2'
+    // Naver Login API
+    implementation 'com.navercorp.nid:oauth:5.9.0'
+    // Kakao Login API
+    implementation "com.kakao.sdk:v2-user:2.18.0"
 
 }

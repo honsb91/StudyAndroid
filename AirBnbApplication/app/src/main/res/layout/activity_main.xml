@@ -23,7 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/btm_nav_menu"/>
+        app:menu="@menu/btm_nav_menu"
+        app:itemIconTint="@drawable/btm_menu_selector"
+        app:itemTextColor="@drawable/btm_menu_selector"/>
 
 
 </LinearLayout>

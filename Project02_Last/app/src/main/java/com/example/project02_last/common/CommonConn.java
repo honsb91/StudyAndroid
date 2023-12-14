@@ -56,8 +56,9 @@ public class CommonConn {
         service.clientPostMethod(url, paramMap).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
-                Log.d(TAG, "onResponse: " + response.body());
-                Log.d(TAG, "onResponse: " + response.errorBody());
+                Log.i(TAG, "onResponse: " + response.body());
+                Log.i(TAG, "onResponse: " + response.errorBody());
+
                 if (response.errorBody() ==null){
                     callback.onResult(true, response.body());
                 }else{
@@ -67,7 +68,7 @@ public class CommonConn {
             @Override
             public void onFailure(Call<String> call, Throwable t) {
                 Log.d(TAG, "onFailure: " + t.getMessage());
-                /*callback.onResult(false,);*/
+                //callback.onResult();
             }
         });
 

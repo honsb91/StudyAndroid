@@ -67,39 +67,17 @@
         android:layout_height="wrap_content"/>
 
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_login"
+    <ImageView
+        android:src="@drawable/kakao_login_btn"
+        android:id="@+id/imgv_kakao_login"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#123456"
-        android:elevation="5dp"
-        android:text="로그인"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/white"
-        app:icon="@drawable/ic_launcher_foreground"
-        app:iconGravity="start"
-        app:iconPadding="@dimen/cardview_compat_inset_shadow"
-        app:iconSize="50dp"
-        app:iconTint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#123"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
-        app:strokeColor="#456"
-        app:strokeWidth="3dp" />
-
-
-    <Button
-        android:text="카카오 로그인"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
-        android:text="네이버 로그인"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <com.navercorp.nid.oauth.view.NidOAuthLoginButton
+        android:id="@+id/buttonOAuthLoginImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
 
     <LinearLayout
         android:gravity="center"
