@@ -6,13 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".member.LoginActivity"
-    android:orientation="vertical">
-
-    <!--Glide : Url을 이용해서 이미지를 붙이는 처리
-        wrap_content인 경우 이미지 표시가 안 될 가능성이 있음
-        wrap_content (x)
+    android:orientation="vertical"
+    >
+    <!-- Glide Url을 이용해서 이미지를 붙이는 처리
+        wrap_content인 경우 이미지 표시가 안 될 가능성이 있음.=>wrap_content x
     -->
-
     <ImageView
         android:id="@+id/imgv_logo"
         android:layout_marginTop="10dp"
@@ -31,7 +29,8 @@
         app:helperText="아이디 입력"
         app:counterEnabled="true"
         app:counterMaxLength="20"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_id"
@@ -44,11 +43,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/ic_login_pw"
+        app:startIconDrawable="@drawable/ic_login_id"
         app:startIconContentDescription="설명글자"
         android:hint="아무글자"
         app:endIconMode="password_toggle"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_pw"
@@ -66,20 +66,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-
-    <ImageView
-        android:src="@drawable/kakao_login_btn"
-        android:id="@+id/imgv_kakao_login"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Login"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:backgroundTint="#123456"
+        android:elevation="5dp"
+        android:text="로그인"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/ic_launcher_foreground"
+        app:iconGravity="start"
+        app:iconPadding="@dimen/cardview_compat_inset_shadow"
+        app:iconSize="50dp"
+        app:iconTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#123"
+        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+        app:strokeColor="#456"
+        app:strokeWidth="3dp" />
 
+
+    <ImageView
+        android:id="@+id/imgv_kakao_login"
+        android:layout_margin="10dp"
+        android:src="@drawable/kakao_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <com.navercorp.nid.oauth.view.NidOAuthLoginButton
         android:id="@+id/buttonOAuthLoginImg"
         android:layout_width="wrap_content"
         android:layout_height="50dp" />
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -89,16 +112,17 @@
             android:text="아직 회원이 아니시라면?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
         <TextView
+
             android:id="@+id/tv_join"
             android:textColor="#1066BB"
             android:textStyle="bold|italic"
             android:text="회원 가입"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
     </LinearLayout>
+
+
 
 
 </LinearLayout>

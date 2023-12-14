@@ -6,16 +6,38 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.example.project02_last.common.CommonConn;
+import com.example.project02_last.customer.CustomerFragment;
+import com.example.project02_last.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+import me.ibrahimsn.lib.OnItemSelectedListener;
+
+public class MainActivity extends AppCompatActivity implements OnItemSelectedListener{
+
+    ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        binding.bottomBar.setOnItemSelectedListener(this);
+        onItemSelect(i:0);
 
-        new CommonConn(this,"adad.nsb").addParamMap("param","Last").onExcute((isResult, data) -> {
-            Log.d("Last", "onCreate: " +data);
-        });
+
+
+    @Override
+    public boolean onItemSelect(int i) {
+            Log.d("btm", "onItemSelect: " +i);
+            if (i==0){
+                getSupportFragmentManager().beginTransaction().replace(binding.container.getId(), new CustomerFragment()).commit();
+            }
+            return true;
+
+        }
+    }
+
+    @Override
+    public boolean onItemSelect(int i) {
+        return false;
     }
 }
