@@ -8,7 +8,11 @@
         <TableRow>
             <TextView android:text="No"/>
             <TextView android:text="전화번호"/>
-
         </TableRow>
+
+    <TableRow>
+        <TextView android:text="No"/>
+        <TextView android:text="전화번호"/>
+    </TableRow>
 
 </TableLayout>

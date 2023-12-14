@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/tab1"
-        android:icon="@drawable/sear"
+        android:icon="@drawable/bottom_menu"
         app:showAsAction="ifRoom"
         android:title="검색"/>
 
