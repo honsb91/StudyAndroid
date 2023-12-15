@@ -6,13 +6,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".customer.CustomerFragment"
     android:orientation="vertical">
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:queryHint="검색어 입력" />
-
+        app:queryHint="검색어 입력"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -24,15 +22,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_insert"
-            android:layout_gravity="right||bottom"
+            android:layout_gravity="right|bottom"
             android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_add"/>
+            android:src="@drawable/ic_add"
+            />
 
     </FrameLayout>
 
