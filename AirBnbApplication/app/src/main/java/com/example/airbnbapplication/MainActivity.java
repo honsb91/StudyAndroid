@@ -2,23 +2,15 @@ package com.example.airbnbapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.Button;
 
 import com.example.airbnbapplication.databinding.ActivityMainBinding;
 import com.example.airbnbapplication.list.ListFragment;
 import com.example.airbnbapplication.login.LoginFragment;
 import com.example.airbnbapplication.message.MessageFragment;
 import com.example.airbnbapplication.search.SearchFragment;
-import com.example.airbnbapplication.tag.TagAdapter;
-import com.example.airbnbapplication.tag.TagDTO;
-import com.example.airbnbapplication.tag.TagFragment;
 import com.example.airbnbapplication.travel.TravelFragment;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
