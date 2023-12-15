@@ -17,10 +17,5 @@
         app:queryHint="어디로 여행가세요?"
         app:iconifiedByDefault="false"/>
 
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
 
 </LinearLayout>

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.example.airbnbapplication.databinding.ActivityMainBinding;
 import com.example.airbnbapplication.list.ListFragment;
@@ -21,13 +22,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
+    
     ActivityMainBinding binding; // (1). binding 선언
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater()); // (2). binding 초기화
         setContentView(binding.getRoot());
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         changeFragment(new SearchFragment());
         binding.bottomNav.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.tab1) {
-                changeFragment(new TagFragment());
+                changeFragment(new SearchFragment());
             } else if (item.getItemId() == R.id.tab2) {
                 changeFragment(new ListFragment());
             }else if (item.getItemId() == R.id.tab3) {
