@@ -3,6 +3,7 @@ package com.example.project02_last;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -10,6 +11,7 @@ import com.example.project02_last.common.CommonConn;
 import com.example.project02_last.common.CommonService;
 import com.example.project02_last.customer.CustomerFragment;
 import com.example.project02_last.databinding.ActivityMainBinding;
+import com.example.project02_last.file.FileActivity;
 
 import java.util.HashMap;
 
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         Log.d("btm", "onItemSelect: " +i);
         if(i==0){
             getSupportFragmentManager().beginTransaction().replace(binding.container.getId(),new CustomerFragment()).commit();
+        }else if (i==1){
+            Intent intent = new Intent(MainActivity.this, FileActivity.class);
+            startActivity(intent);
         }
         return true;
     }
