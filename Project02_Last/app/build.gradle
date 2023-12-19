@@ -52,4 +52,10 @@ dependencies {
 
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
 
+    // 2023-12-19: Naver Map API 추가 . setting.gradle에 maven도 추가함.
+    implementation 'com.naver.maps:map-sdk:3.17.0'
+
+    // 현재 위치나 가속도 등의 휴대폰 전반적인 위치정보를 얻어옴
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
 }

@@ -12,6 +12,7 @@ import com.example.project02_last.common.CommonService;
 import com.example.project02_last.customer.CustomerFragment;
 import com.example.project02_last.databinding.ActivityMainBinding;
 import com.example.project02_last.file.FileActivity;
+import com.example.project02_last.map.NsbMapFragment;
 
 import java.util.HashMap;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.bottomBar.setOnItemSelectedListener(this);
-        onItemSelect(0);
+        onItemSelect(2);
     }
     @Override
     public boolean onItemSelect(int i) {
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         }else if (i==1){
             Intent intent = new Intent(MainActivity.this, FileActivity.class);
             startActivity(intent);
+        } else if (i==2) {
+            getSupportFragmentManager().beginTransaction().replace(binding.container.getId(), new NsbMapFragment()).commit();
         }
         return true;
     }

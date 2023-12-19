@@ -8,7 +8,8 @@
         YOUTUBE : -> 메니페스트 & QUERIES ( API 30 이상 )
         MEDIA_LOCATION , CAMERA , GPS : 높음 -> 메니페스트에 명시 후 버전에 따라 queries 로 재명시 후 -> 메소드로 확인 ( 사용자 )
        -->
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 실제로 권한 요청을 받아와야하는것 ↓ -->
@@ -57,6 +58,10 @@
         android:theme="@style/Theme.Project02_Last"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="" />
         <activity
             android:name=".file.FileActivity"
             android:exported="false" />
